@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="event.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Payment Options</h1>
+        <p>Please select your preferred mode of payment.</p>
+
+        <form action="confirmation.html">
+
+            <label>Select Payment Method:</label>
+            <select required>
+                <option value="">-- Choose Payment Method --</option>
+                <option value="Credit">Credit Card</option>
+                <option value="debit">Debit Card</option>
+                <option value="upi">UPI</option>
+            </select>
+
+            <label>Enter Payment Details:</label>
+            <input type="text" placeholder="Enter card number or UPI ID" required>
+
+            <label>Select an event:</label>
+            <select required>
+                <option value="">-- Choose event --</option>
+                <option value="type">Pool Party</option>
+                <option value="type">Dj Night</option>
+                <option value="type">Couple Dance</option>
+                <option value="type">Movie Night</option>
+            </select>
+
+            <label>Amount to be Paid:</label>
+            <input type="amount" placeholder="amount" required>
+
+            <button type="submit">Proceed to Confirmation</button>
+        </form>
+    </div>
+
+</body>
+</html>
